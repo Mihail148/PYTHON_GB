@@ -1,0 +1,11 @@
+def getvalue(dictionary, key, default_value = None):
+    try:
+        return dictionary[key]
+    except KeyError:
+        return default_value
+
+my_dict = {'one': 1, 'two': 2, 'three': 3}
+
+key1 = 'two'
+print(getvalue(my_dict, key1))
+print(getvalue(my_dict, "xdvdsgf", default_value=12))
